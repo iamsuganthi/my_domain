@@ -1,0 +1,31 @@
+.about img {
+	border-radius: 50%;
+    width: 20%;
+}
+
+.center {
+	text-align: center;
+}
+
+.embed iframe {
+	background: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 219, 219);
+    margin: 1px 1px 12px;
+    max-width: 658px;
+    width: calc(100% - 4px);
+    border-radius: 4px;
+    box-shadow: none;
+    display: block;
+    padding: 0px;
+    height: 400px;
+    margin: 0 auto 2rem;
+}
+
+.embed.instagram {
+	width: 70%;
+    margin-left: 110px;
+}
+
+p {
+	margin: 0;
+}

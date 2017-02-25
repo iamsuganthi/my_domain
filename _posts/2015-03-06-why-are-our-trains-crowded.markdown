@@ -1,0 +1,33 @@
+---
+author: enthudrives
+comments: true
+date: 2015-03-06 14:55:00+00:00
+layout: post
+link: https://tsuganthi.wordpress.com/2015/03/06/why-are-our-trains-crowded/
+slug: why-are-our-trains-crowded
+title: Why are our trains crowded?!
+wordpress_id: 626
+categories:
+- bangalore
+- bangarapet
+- bangarpet
+- crowded
+- kochuveli
+- krpuram
+- kuppam
+- sleeper
+- southern railways
+- train
+---
+
+Last friday, I boarded the Kochuveli Express(to Thrissur) at KR puram, where the train stops just for 2 minutes. I was waiting at the spot where our compartment was expected to arrive. So did 100 other people. And another 100 people on the other side of the railway track. All 200 people rushed into the same reserved compartment which could only accommodate 72 people, which already had 200 people inside. After successfully boarding and battling my way to the seat number, we found some people sitting comfortable on our seats. They decided to "generously" give us some space to sit after some time.  
+<table cellpadding="0" align="center" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" class="tr-caption-container" ><tbody ><tr >
+<td style="text-align:center;" >[![](https://tsuganthi.files.wordpress.com/2015/03/9c3d9-kochuveli.jpg)](https://tsuganthi.files.wordpress.com/2015/03/9c3d9-kochuveli.jpg)
+</td></tr><tr >
+<td style="text-align:center;" class="tr-caption" >S12 - Kochuveli Express
+</td></tr></tbody></table>The additional people in the compartment were travelling to either Bangarpet or Kuppam which are the next two stations (around 1.5 hrs from KR puram). Is it OK to travel with no/open ticket in reserved compartment?  
+  
+Why did the TTE not visit our compartment to check the tickets? I'm sure he knows that the train is always crowded till Kuppam. May be, he was not able to board the train!  
+Why did the railway police not block people board the train from the other side of the track?  
+  
+When there are so many people travelling to Kuppam and Bangarpet from Bangalore, how many local trains operate to these towns?!
