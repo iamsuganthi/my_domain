@@ -9,7 +9,7 @@ layout: default
   {% endif %}
   <h1 class="postTitle">{{ page.title }}</h1>
   <div class="meta">
-    {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:180 }}</span> Minute Read
+    {{ page.date | date: '%B %d, %Y' }} | <span class="time">{{ page.content | number_of_words | divided_by:130.0 | ceil }}</span> Minute Read
   <p class="post-categories">
     {% if post %}
     {% assign categories = post.categories %}
@@ -22,7 +22,7 @@ layout: default
     {% endfor %}
   </div>
   {{ content }}
-
+  
   <div id="disqus_thread"></div>
   <script>
 
