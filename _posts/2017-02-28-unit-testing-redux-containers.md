@@ -18,8 +18,8 @@ The `Counter` component is a pure presentational component. ie, it doesn't maint
 {% gist enthudrives/45abad1feb47550b3f8d13ddfe2777b2 %} 
 
 
-Enzyme lets you mount components in isolation on a dummy dom. 
-This component has information about how to map the props to dom elements. 
+Enzyme lets you mount components in isolation, on a dummy DOM. 
+This component has information about how to map the props to DOM elements. 
 To unit test this component, mount it with enzyme and verify if props are consumed as expected on the dummy dom.
 Unit test for this component:
     
@@ -29,8 +29,9 @@ CounterContainer connects Counter to the store. In other words, it prepares the 
 {% gist enthudrives/e51d4906fb03b1ae214f9be5838ada31 %} 
 
 Enzyme can be used to mount redux containers as well(They are components too. D'uh!). 
-Containers need a store when they are mounted. `redux-mock-store` can be used to create a mock store which can be used to mount the container.
-Unit test corresponding to the `CounterContainer`:  
+Containers need a store when they are mounted. In redux applications, the `Provider` component passes the store to all containers through the context. However, we can pass a mock store to the container in unit tests. [redux-mock-store](https://github.com/arnaudbenard/redux-mock-store) can be used to create a mock store for testing.
+
+Unit test corresponding to the `CounterContainer`:
 {% gist enthudrives/eb1f4720ad299742969312658371feb0 %} 
 
 Since it is a mock store, it is easy verify if `dispatch` is called with the expected action type.
