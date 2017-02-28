@@ -26,17 +26,11 @@ Spring lets you autowire all components implementing the interface.
        void talk();
     }
 
-
-
-    
     public class Cat implements Animal {
       void talk() {
         System.out.println("Meow");
       }
     }
-
-
-
     
     class Dog implements Animal {
       void talk() {
@@ -47,10 +41,8 @@ Spring lets you autowire all components implementing the interface.
 
 If you want to inject all implementations of `Animal` interface in some service, you can just inject a list of type Animal.
 
-    
     @Autowired
     private List<Animal> animals;
-
 
 The field `animals` is a list of all components implementing the `Animal` interface. Now if you want to invoke `talk()` method on Dog, Cat and other implementations of the `Animal` interface, you can do the following.
 
