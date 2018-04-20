@@ -8,6 +8,7 @@ categories:
 - React
 - Redux
 - Javascript
+keywords: react, redux, unit testing, tdd, containers, provider, mock store
 ---
 
 Enzyme is a library for testing react components. I've used jest and enzyme to write unit tests for my react-redux application. 

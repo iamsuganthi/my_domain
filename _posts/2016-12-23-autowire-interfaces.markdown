@@ -10,6 +10,7 @@ layout: post
 link: https://tsuganthi.wordpress.com/2016/12/23/autowire-interfaces/
 slug: autowire-interfaces
 title: Autowire Interfaces
+keywords: spring, autowire interfaces, inheritance, application context
 wordpress_id: 863
 categories:
 - java

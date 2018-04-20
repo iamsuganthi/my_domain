@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: enthudrives.com/sitemap.xml

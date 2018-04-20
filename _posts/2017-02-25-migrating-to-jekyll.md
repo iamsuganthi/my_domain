@@ -6,6 +6,7 @@ title: Migrating to Jekyll
 categories:
 - Tech
 - Jekyll
+keywords: jekyll, wordpress, github-pages
 ---
 
 <p>Jekyll is a ruby gem which is used to build static websites. I chose Jekyll over Wordpress for the following reasons:</p>

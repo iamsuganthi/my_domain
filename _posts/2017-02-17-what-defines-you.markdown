@@ -8,6 +8,7 @@ slug: what-defines-you
 title: What defines you..
 wordpress_id: 995
 categories: [Fitness,Gym, Incidents, Life, weight training]
+keywords: fitness, women, gym, workout
 ---
 
 {% instagram BPpQjCRBqE2 %}

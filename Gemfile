@@ -8,3 +8,5 @@ gem "compass"
 gem "sass"
 gem "support-for"
 gem "jekyll-gist"
+gem "jekyll-seo-tag"
+gem 'jemoji'

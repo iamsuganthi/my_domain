@@ -1,5 +1,5 @@
 title: Random Ramblings
-description: 100% Natural
+description: My two cents
 
 url: http://enthudrives.com
 baseurl: ""
@@ -12,6 +12,8 @@ gems:
   - jekyll-paginate
   - ./_plugins/instagram
   - jekyll-gist
+  - jekyll-seo-tag
+  - jemoji
 paginate: 5
 
 navigation:
