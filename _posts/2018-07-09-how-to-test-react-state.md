@@ -2,7 +2,7 @@
 author: enthudrives
 layout: post
 comments: true
-title: How to test state change in React components?
+title: How to test state in React components?
 excerpt: 'Do not test the state. Testing the new value of state from your unit test is like testing private methods'
 slug: how-to-test-react-state
 categories:
