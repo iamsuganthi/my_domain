@@ -10,3 +10,4 @@ gem "support-for"
 gem "jekyll-gist"
 gem "jekyll-seo-tag"
 gem 'jemoji'
+gem "jekyll-category-pages"
