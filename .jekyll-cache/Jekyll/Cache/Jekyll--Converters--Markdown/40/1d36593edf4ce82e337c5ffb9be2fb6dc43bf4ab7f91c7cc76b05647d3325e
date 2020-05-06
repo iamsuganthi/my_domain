@@ -1,0 +1,2 @@
+I"<p>Virtualbox doesnt function normally if you have upgraded your kernel. So remove the older versions of your kernel after each upgrade. Else, you wont be able to start a virtual OS by hitting start. You will get an error saying run “/etc/init.d/vboxdrv setup”.</p>
+:ET

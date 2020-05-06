@@ -1,0 +1,2 @@
+I"<p><code class="highlighter-rouge">MergeProps</code> is the third argument to the <a href="https://github.com/reactjs/react-redux/blob/master/docs/api.md">connect</a> function. It is a function which is used to select a slice of the props from state and dispatch.</p>
+:ET

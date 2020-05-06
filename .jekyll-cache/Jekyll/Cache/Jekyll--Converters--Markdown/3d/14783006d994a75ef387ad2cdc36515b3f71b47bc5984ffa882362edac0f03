@@ -1,0 +1,2 @@
+I"u<p>With Micro-services pattern, we rely more on the availability of services to connect with. Even if the services being consumed are written in a way to handle errors gracefully, there is a few more factors, like Network Connections, which could break your application. This makes it important to anticipate and handle failures when interacting with external systems.</p>
+:ET

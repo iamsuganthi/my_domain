@@ -8,13 +8,14 @@ permalink: blog/:title/
 
 markdown: kramdown
 highlighter: rouge
-gems: 
+plugins: 
   - jekyll-paginate
   - ./_plugins/instagram
   - jekyll-gist
   - jekyll-seo-tag
   - jemoji
   - jekyll-category-pages
+  - jekyll-feed
 paginate: 5
 
 navigation:

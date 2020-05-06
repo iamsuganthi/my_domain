@@ -11,3 +11,4 @@ gem "jekyll-gist"
 gem "jekyll-seo-tag"
 gem 'jemoji'
 gem "jekyll-category-pages"
+gem "jekyll-feed"
