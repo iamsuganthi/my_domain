@@ -1,0 +1,3337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/tkg-on-aws-vsphere/</loc>
+    
+    <lastmod>2020-05-06T00:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/kubernetes-vs-containers/</loc>
+    
+    <lastmod>2020-03-14T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/how-to-test-react-state/</loc>
+    
+    <lastmod>2018-07-09T00:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/happy-teams-are-healthy-teams/</loc>
+    
+    <lastmod>2018-01-27T22:05:55+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/circuit-breaker-pattern/</loc>
+    
+    <lastmod>2017-07-23T00:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/why-i-hated-running/</loc>
+    
+    <lastmod>2017-06-03T00:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/training-that-voice/</loc>
+    
+    <lastmod>2017-06-02T00:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/gender-stereotypes/</loc>
+    
+    <lastmod>2017-03-11T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/break-stereotypes/</loc>
+    
+    <lastmod>2017-03-07T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/connect-with-mergeprops/</loc>
+    
+    <lastmod>2017-03-02T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/unit-testing-redux-containers/</loc>
+    
+    <lastmod>2017-02-28T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/migrating-to-jekyll/</loc>
+    
+    <lastmod>2017-02-25T00:00:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/what-defines-you/</loc>
+    
+    <lastmod>2017-02-17T22:53:06+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/autowire-interfaces/</loc>
+    
+    <lastmod>2016-12-23T22:05:55+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/fitness-freak/</loc>
+    
+    <lastmod>2016-01-03T05:53:29+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/why-are-our-trains-crowded/</loc>
+    
+    <lastmod>2015-03-07T01:55:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/superheroes-from-books-become-deities/</loc>
+    
+    <lastmod>2015-01-13T05:32:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/relationship-between-genre-and-movie/</loc>
+    
+    <lastmod>2015-01-06T05:03:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/without-you/</loc>
+    
+    <lastmod>2014-03-29T04:03:36+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/on-a-beautiful-saturday-morning/</loc>
+    
+    <lastmod>2014-02-16T19:08:37+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/the-hidden-price-tag/</loc>
+    
+    <lastmod>2014-01-20T04:02:59+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/a-peek-into-the-year-that-passed-by/</loc>
+    
+    <lastmod>2014-01-03T12:01:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/a-peep-into-the-year-that-passed-by/</loc>
+    
+    <lastmod>2014-01-03T06:01:21+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/f-r-i-e-n-d-s/</loc>
+    
+    <lastmod>2013-10-19T06:05:21+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/the-south-indian-in-me/</loc>
+    
+    <lastmod>2013-09-13T03:33:47+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/so-similar-dissimilar/</loc>
+    
+    <lastmod>2013-06-16T04:23:44+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/423/</loc>
+    
+    <lastmod>2012-10-23T02:13:04+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/live-like-a-swimmer/</loc>
+    
+    <lastmod>2012-06-26T03:17:18+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/visualizing-future/</loc>
+    
+    <lastmod>2012-06-25T06:32:21+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/the-unavoidable/</loc>
+    
+    <lastmod>2012-06-22T04:56:43+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/tag-athon/</loc>
+    
+    <lastmod>2012-03-09T04:00:07+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/every-cloud-has-a-silver-lining/</loc>
+    
+    <lastmod>2012-02-16T03:25:15+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/optimist/</loc>
+    
+    <lastmod>2012-02-07T05:17:30+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/thoughtworks/</loc>
+    
+    <lastmod>2012-02-04T00:19:04+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/problem-with-virtualbox/</loc>
+    
+    <lastmod>2011-12-07T02:19:09+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/diwali-memories/</loc>
+    
+    <lastmod>2011-10-26T00:51:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/opengl-and-glut/</loc>
+    
+    <lastmod>2011-10-26T00:23:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/video-games/</loc>
+    
+    <lastmod>2011-10-26T00:11:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/paradigm-2011-ssn-college-of-engineering/</loc>
+    
+    <lastmod>2011-08-19T21:08:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/three-days-on-the-rails/</loc>
+    
+    <lastmod>2011-02-19T23:56:49+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/installing-drupal-on-lamp/</loc>
+    
+    <lastmod>2011-02-03T00:53:14+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/my-new-vision-about-friendship/</loc>
+    
+    <lastmod>2011-01-30T09:41:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/warning-when-using-yum/</loc>
+    
+    <lastmod>2010-12-23T22:52:49+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/the-unfilled-answer-sheet/</loc>
+    
+    <lastmod>2010-12-03T04:51:36+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/ssn-rules/</loc>
+    
+    <lastmod>2010-08-10T01:49:23+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/installing-openoffice-3-1-in-linux/</loc>
+    
+    <lastmod>2010-07-12T03:17:22+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/install-java-in-linux/</loc>
+    
+    <lastmod>2010-07-12T03:00:48+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/my-first-c-application/</loc>
+    
+    <lastmod>2010-06-22T13:21:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/to-break-the-ice/</loc>
+    
+    <lastmod>2010-06-20T05:53:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/connecting-people/</loc>
+    
+    <lastmod>2010-05-18T22:28:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/fedora-for-beginners/</loc>
+    
+    <lastmod>2009-11-13T04:05:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/caste-and-todays-society/</loc>
+    
+    <lastmod>2009-10-29T14:16:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/first-business-venture/</loc>
+    
+    <lastmod>2009-09-19T19:51:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/my-journey-to-ssn/</loc>
+    
+    <lastmod>2009-06-24T21:49:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/gmail-remote-control/</loc>
+    
+    <lastmod>2009-06-24T03:19:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/gmail-remote-control-3/</loc>
+    
+    <lastmod>2009-06-23T21:49:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/wolfram-alpha/</loc>
+    
+    <lastmod>2009-06-23T21:05:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/turned-18/</loc>
+    
+    <lastmod>2009-06-14T17:44:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/mother/</loc>
+    
+    <lastmod>2009-06-09T11:56:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/can-create-a-folder-named-con/</loc>
+    
+    <lastmod>2009-06-01T04:00:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/violation-of-rules/</loc>
+    
+    <lastmod>2009-05-28T17:44:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/unforgettable-ride-on-a-rainy-day/</loc>
+    
+    <lastmod>2009-05-27T15:06:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/proxy-sites/</loc>
+    
+    <lastmod>2009-05-27T04:21:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/advertisements/</loc>
+    
+    <lastmod>2009-05-26T01:10:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/mginger/</loc>
+    
+    <lastmod>2009-05-25T01:26:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/god-the-almighty/</loc>
+    
+    <lastmod>2009-05-24T03:10:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/my-life-trend-shift/</loc>
+    
+    <lastmod>2008-11-21T03:23:00+11:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/possessiveness-a-painful-disease/</loc>
+    
+    <lastmod>2008-05-12T15:29:00+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.5</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/about/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/articles/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/categories</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/contact/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/feed.xml</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/sitemap.xml</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page2/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page3/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page4/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page5/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page6/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page7/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page8/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page9/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page10/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page11/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page12/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page13/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/blog/page14/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/advertisements/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/fitness/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/god/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/gym/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/iwd/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/page2/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/page3/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/page4/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/page5/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incidents/page6/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/javascript/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/jekyll/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/life/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/life/page2/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/patterns/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/possessiveness/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/public/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/react/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/redux/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/ror/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/running/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/spring-boot/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/tech/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/agile-team/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/application/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/assocoation/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/aws/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/bangalore/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/bangarapet/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/bangarpet/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/bible/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/c/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/c-gui/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/c-interface/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/category-movie/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/category-shop/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/chennai/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/christianity/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/cloud/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/containers/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/crackers/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/crazy/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/crowded/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/diwali/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/docker/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/enzyme/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/fedora/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/fedora/page2/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/genre-book/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/genre-movie/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/glut/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/graphics-programming/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/happy-teams/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/has-many/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/has-one/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/hinduism/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/holy-books/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/how-to/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/how-to/page2/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/how-to-test-react-state-in-component/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/incident/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/install/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/install-java/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/java/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/jest/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/joystick/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/kaas-plateau/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/kochuveli/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/krpuram/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/kubernetes/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/kuppam/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/legend-of-the-kage/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/linux/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/mario/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/mginger/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/mobile/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/multicloud/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/nintendo/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/nuts-and-milk/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/online-games/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/opengl/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/openjdk/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/pivotal/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/project/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/proxies/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/pune/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/qt/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/qt-beginner/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/rajmachi/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/ramayana/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/rappelling/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/react/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/redux/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/religion/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/sleeper/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/software-team/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/southern-railways/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/spring/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/state/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/superstition/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/tanzu/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/test-state-in-react/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/text-messages/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/tkg/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/train/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/travel/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/tutorial/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/type-book/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/video-games/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/vmware/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/vsphere/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/weight-training/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/women/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/work-culture/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/category/yum-install-g/</loc>
+    
+    <lastmod>2020-05-06T17:52:25+10:00</lastmod>
+    
+    
+    <changefreq>monthly</changefreq>
+    
+    
+    <priority>0.3</priority>
+    
+  </url>
+  
+  
+  
+</urlset>

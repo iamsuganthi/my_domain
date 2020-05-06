@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Random Ramblings</title>
+    <description>My two cents</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 06 May 2020 17:52:25 +1000</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 17:52:25 +1000</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      
+      <item>
+        <title>Run Kubernetes clusters across AWS and vSphere with TKG</title>
+        <description>&lt;p&gt;It is common for many large organizations to run their Kubernetes workloads on more than one cloud provider. It is a great strategy to utilise the benefits of on-prem and public cloud. In this blog, I will show you how to create, run and manage clusters across AWS and vSphere using Tanzu Kubernetes Grid (TKG).&lt;/p&gt;
+
+&lt;h2 id=&quot;brief-intro-to-tkg&quot;&gt;Brief intro to TKG&lt;/h2&gt;
+&lt;p&gt;TKG is a bundle of tools that help run k8s in a production environment. In addition to vanilla kubernetes, TKG includes Open Source tools like Cluster API, Calico for networking, Fluent Bit for logging, Contour for ingress etc.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Deploy TKG management cluster to Amazon EC2 - Follow steps in &lt;a href=&quot;https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.0/vmware-tanzu-kubernetes-grid-10/GUID-install-tkg-aws.html&quot;&gt;docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Deploy TKG on vSphere -  Follow steps in &lt;a href=&quot;https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.0/vmware-tanzu-kubernetes-grid-10/GUID-install-tkg-vsphere.html&quot;&gt;docs&lt;/a&gt;
+Alternatively, if you are on &lt;em&gt;vSphere 7&lt;/em&gt;, you could enable kubernetes Workload management and skip step and follow &lt;a href=&quot;https://docs.vmware.com/en/VMware-Tanzu-Kubernetes-Grid/1.0/vmware-tanzu-kubernetes-grid-10/GUID-tanzu-k8s-clusters-connect-vsphere7.html&quot;&gt;this link&lt;/a&gt; to add vSphere management cluster to your TKG cli.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;multiple-tkg-management-clusters&quot;&gt;Multiple TKG management clusters&lt;/h2&gt;
+&lt;p&gt;Now that we have set up two different TKG clusters, lets see how we can manage them using the TKG cli.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tkg get management-cluster&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+-------------------------------+---------------------------------------------------------------+
+| MANAGEMENT CLUSTER NAME       | CONTEXT NAME                                                  |
++-------------------------------+---------------------------------------------------------------+
+| tkg-mgmt-aws-zzzzz*  | tkg-mgmt-aws-zzzzz-admin@tkg-mgmt-aws-zzzzz |
+| wcp.vsphere.test.io  | wcp.vsphere.test.io                         |
++-------------------------------+---------------------------------------------------------------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;indicates the management cluster which is selected. AWS management cluster is selected at the moment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Create a cluster on AWS:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tkg create cluster my-aws-cluster --plan=dev --kubernetes-version=v1.17.3+vmware.2&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once it is done, run the following command to make sure the cluster is created.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;tkg get cluster&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+----------+-------------+
+| NAME | STATUS |
++----------+-------------+
+| my-aws-cluster | Provisioned |
++----------+-------------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;create-a-cluster-on-vsphere&quot;&gt;Create a cluster on vSphere:&lt;/h3&gt;
+&lt;p&gt;Select the vSphere k8s cluster&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tkg set management-cluster wcp.abc.test.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;To create a cluster in vSphere,&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tkg create cluster my-tkg-cluster --plan=dev --namespace=demo --kubernetes-version=v1.16.8+vmware.1-tkg.3.60d2ffd&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Once the cluster is created, you could verify by running the command or you could login to the vCenter UI to take a look.
+&lt;img src=&quot;/assets/img/vsphere-cluster.png&quot; alt=&quot;Cluster in vCenter&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;key-takeaways&quot;&gt;Key takeaways:&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;I could use different versions of kubernetes across AWS and vSphere.&lt;/li&gt;
+  &lt;li&gt;I could use different storage classes across AWS and vSphere. Edit ~/.tkg/config.yaml to change storage classes or vm classes.&lt;/li&gt;
+  &lt;li&gt;Consistent experience creating clusters across the two IaaS. I can use the same TKG Cli to manage clusters. Yay!&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+        
+          <description>Large organizations to run their Kubernetes workloads on more than one cloud provider. Here is how TKG helps manage k8s clusters on multiple IaaS</description>
+        
+        <pubDate>Wed, 06 May 2020 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/tkg-on-aws-vsphere/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/tkg-on-aws-vsphere/</guid>
+        
+        
+        <category>tkg</category>
+        
+        <category>tanzu</category>
+        
+        <category>kubernetes</category>
+        
+        <category>vsphere</category>
+        
+        <category>vmware</category>
+        
+        <category>containers</category>
+        
+        <category>aws</category>
+        
+        <category>multicloud</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Kubernetes vs Containers</title>
+        <description>&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;If you interact with Software development teams as a part of your role, you would have heard the term Kubernetes (or 'K8s' as it is fondly known). This is a complicated concept to understand, especially if you do not have a Software Engineering background. &lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Last week, I was in a meeting with a few non-technical colleagues who were sharing customer stories around containers and Kubernetes. They were using jargon like containers, docker, kubernetes in this conversation.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;A curious colleague who was listening in turned to me and asked “What is the difference between a Container and Kubernetes?” There was silence in the room, everyone eagerly waiting to hear this technical person’s answer.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;The easy answer  —  Docker is used to create &lt;em&gt;containers&lt;/em&gt; and Kubernetes is used to &lt;em&gt;orchestrate&lt;/em&gt; them. I could get away with this explanation, but that is just throwing more tech jargon to the fire. How can you clearly articulate&amp;nbsp; the differences between these technologies, let alone explain these concepts in a human-friendly, digestible way?&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;level&quot;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;B&lt;/strong&gt;ackground&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Let’s say, we are building a simple website called &lt;em&gt;chatter.com &lt;/em&gt;where people can post short updates about their life&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Here the engineers build this application in a programming language like java. They get it working on their machine, but you cannot see what they have built until this software application is available on the internet. Hence, this software needs to be &lt;strong&gt;deployed &lt;/strong&gt;somewhere.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This application can be deployed on the company’s cloud infrastructure — it’s just computers on someone else’s hardware.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Since the application is written in java, the computer needs java to run the website. The engineers therefore package this application with java, so that it can be run on any computer just like it runs on the engineer’s machine.&amp;nbsp;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This package is called a &lt;strong&gt;container&lt;/strong&gt;. Just like regular airtight food containers, containers in the digital world come in different shapes and sizes. Based on the size of containers, more than one container can run on a computer.&amp;nbsp;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;&lt;em&gt;We have our chatter.com running with containers. So what’s the deal with Kubernetes?&lt;/em&gt;&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:heading {&quot;level&quot;:3} --&gt;
+&lt;h3&gt;&lt;strong&gt;C&lt;/strong&gt;ontainers to&lt;strong&gt; K&lt;/strong&gt;ubernetes&lt;/h3&gt;
+&lt;!-- /wp:heading --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;For the next part, let’s pretend that the Cloud Infrastructure is like a 2x2 storage unit, where each shelf is a computer. Containers are just boxes. There are already a few (black coloured) containers on these shelves.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:image {&quot;width&quot;:780,&quot;height&quot;:611} --&gt;
+&lt;figure class=&quot;wp-block-image is-resized&quot;&gt;&lt;img src=&quot;https://lh3.googleusercontent.com/iVBfTvABS0IlmOE8FZnCvK_-ahp1-mzEFRdC7tjQtBQfb2hGcnhLHbo3002H7m5TgzhDvlL3fMjXbfcqtl1j9_oM0L-1_aM3KkyIrpe-uIvCMNmgAZ3T4RAzetGbCb3KLenwsGw1&quot; alt=&quot;&quot; width=&quot;780&quot; height=&quot;611&quot; /&gt;&lt;figcaption&gt;Each cube is a computer. Pink box is the chatter container&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Engineers write scripts to drop the &lt;em&gt;chatter&lt;/em&gt; container on an available shelf in the storage unit. This container is running on the top-right shelf (the pink container in the image).&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;Now, imagine there is an earthquake and this container suddenly crashes to the floor. Yep, sometimes websites crash too! Someone has to repeat the previous step again to replace the container.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;How great would it be if there was someone watching over all these containers, making sure they are always running well? Enter &lt;strong&gt;Kubernetes&lt;/strong&gt; to the rescue.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:image {&quot;id&quot;:38,&quot;sizeSlug&quot;:&quot;large&quot;} --&gt;
+&lt;figure class=&quot;wp-block-image size-large&quot;&gt;&lt;img src=&quot;https://solutionarchitecturedotblog.files.wordpress.com/2020/04/image2_k8s.png?w=1024&quot; alt=&quot;Kubernetes healing a burning pod
+&quot; class=&quot;wp-image-38&quot; /&gt;&lt;figcaption&gt;Kubernetes healing a burning pod&lt;br /&gt;&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;!-- /wp:image --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;When a container crashes, k8s tries to heal the container and brings it back to life. It makes sure all containers are healthy and safe. K8s helps with finding a vacant spot for containers and allocates them to the appropriate shelf based on its size; ensuring the optimal use of shelf space.&lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+
+&lt;!-- wp:paragraph --&gt;
+&lt;p&gt;This is a very high level differentiation between containers and k8s. There is more to k8s than allocating compute to containers. If you are interested in learning more, please leave a comment. I will share more details in subsequent posts. :) &lt;/p&gt;
+&lt;!-- /wp:paragraph --&gt;
+</description>
+        
+          <description>Large organizations to run their Kubernetes workloads on more than one cloud provider. Here is how TKG helps manage k8s clusters on multiple IaaS</description>
+        
+        <pubDate>Sat, 14 Mar 2020 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000/blog/kubernetes-vs-containers/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/kubernetes-vs-containers/</guid>
+        
+        
+        <category>kubernetes</category>
+        
+        <category>containers</category>
+        
+        <category>docker</category>
+        
+        <category>cloud</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>How to test state in React components?</title>
+        <description>&lt;h4 id=&quot;do-not-test-the-state&quot;&gt;Do not test the state!&lt;/h4&gt;
+
+&lt;p&gt;Although it is tempting to use &lt;code class=&quot;highlighter-rouge&quot;&gt;state()&lt;/code&gt; from enzyme to test the value of your component state from jest tests, it is a code smell to do so. Because, &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; is internal to the component. Testing the new value of state from your unit test is like testing private methods (in java/ruby..).&lt;/p&gt;
+
+&lt;h3 id=&quot;how-else-do-i-test-state-change&quot;&gt;How else do I test state change?&lt;/h3&gt;
+&lt;p&gt;Now that is a different question.&lt;/p&gt;
+
+&lt;p&gt;When writing unit tests in jest/jasmine, it is a good practice to describe the behavior of your component. Tests are documentation after all. &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; is an internal detail of how you have implemented the functionality.&lt;/p&gt;
+
+&lt;h2 id=&quot;example&quot;&gt;Example:&lt;/h2&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Counter extends Component {
+    constructor(props) {
+        super(props);
+        this.state= {
+            count: 1
+        };
+    }
+    
+    increment = () =&amp;gt; {
+        this.setState((prevState) =&amp;gt; ({count: prevState.count + 1}));
+    }
+    
+    render() {
+          return (
+            &amp;lt;div&amp;gt;
+                  &amp;lt;h2&amp;gt;Number of votes: {this.state.count}&amp;lt;/h2&amp;gt;
+                    &amp;lt;p&amp;gt; This is my code. Please upvote!&amp;lt;/p&amp;gt;
+                    &amp;lt;button onClick={this.increment}&amp;gt;Upvote!&amp;lt;/button&amp;gt;
+             &amp;lt;/div&amp;gt;
+            );
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;In the example above, clicking on the button increments the number of votes on screen.&lt;/p&gt;
+
+&lt;p&gt;To test this in jest,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;it('updates number of votes', () =&amp;gt; {
+  const wrapper = shallow(&amp;lt;Counter/&amp;gt;);
+  
+  wrapper.find('button').simulate('click');
+  wrapper.update(); // Read: enzyme update
+  
+  expect(wrapper.find('h2').text()).toEqual('Number of votes: 2');
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;To conclude, use your tests to verify the behavior and not the implementation.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What is your take on testing state changes? Let me know in the comments below! Happy coding :)&lt;/p&gt;
+
+</description>
+        
+          <description>Do not test the state. Testing the new value of state from your unit test is like testing private methods</description>
+        
+        <pubDate>Mon, 09 Jul 2018 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/how-to-test-react-state/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/how-to-test-react-state/</guid>
+        
+        
+        <category>react</category>
+        
+        <category>state</category>
+        
+        <category>redux</category>
+        
+        <category>jest</category>
+        
+        <category>enzyme</category>
+        
+        <category>test state in react</category>
+        
+        <category>how to test react state in component</category>
+        
+      </item>
+      
+    
+      
+    
+      
+      <item>
+        <title>Circuit Breaker Pattern</title>
+        <description>&lt;p&gt;With Micro-services pattern, we rely more on the availability of services to connect with. Even if the services being consumed are written in a way to handle errors gracefully, there is a few more factors, like Network Connections, which could break your application. This makes it important to anticipate and handle failures when interacting with external systems.&lt;/p&gt;
+
+&lt;p&gt;The idea is similar to the Circuit Breaker in electrical systems. When you try to consume more electricity than the treshold, the fuse would blow up, leaving the electric circuit open. This prevents you from overloading the electrical circuit again. You need to close the circuit (with a copper wire) before you can consume electricity.&lt;/p&gt;
+
+&lt;p&gt;Circuit Breaker pattern is similar. If a remote system is unhealthy, the circuit is left open, so that your application does not wait for a timeout from the remote system repeatedly.&lt;/p&gt;
+
+&lt;p&gt;The difference with Circuit breaker in Software is that, there is no need for a human intervention in fixing the circuit. After a certain amount of time, the circuit breaker goes to a &lt;code class=&quot;highlighter-rouge&quot;&gt;half-open&lt;/code&gt; state, in which the next call to the remote system is made to the remote system. If this call passes, the circuit gets &lt;code class=&quot;highlighter-rouge&quot;&gt;closed&lt;/code&gt;. Else, it remains &lt;code class=&quot;highlighter-rouge&quot;&gt;open&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;dont-do-it-if-it-hurts&quot;&gt;Don’t do it if it hurts!&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;This post is based on the book &lt;strong&gt;Release It!&lt;/strong&gt; by &lt;strong&gt;Michael T.Nygard&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+</description>
+        
+          <description>&lt;p&gt;With Micro-services pattern, we rely more on the availability of services to connect with. Even if the services being consumed are written in a way to handle errors gracefully, there is a few more factors, like Network Connections, which could break your application. This makes it important to anticipate and handle failures when interacting with external systems.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sun, 23 Jul 2017 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/circuit-breaker-pattern/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/circuit-breaker-pattern/</guid>
+        
+        
+        <category>Tech</category>
+        
+        <category>Patterns</category>
+        
+        <category>Spring Boot</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>The time I started running</title>
+        <description>&lt;p&gt;I remember running my first 8 km and not being able to walk the whole day after. I thought I was just not fit. I tried multiple times, with short distance and long distance running. But my feet hurt so bad that I gave up on running.&lt;/p&gt;
+&lt;p&gt;A lot of articles suggested that I need better shoes. I bought a pair from Decathlon (40 AUD). It was so comfortable for my zumba classes. I decided to give running another chance. But, Zumba shoes are not running shoes.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;I tried couple more shoes from big brands like Nike &amp;amp; Reebok. They were amazing for weight training. But&amp;nbsp;horrendous for running.&lt;/p&gt;
+&lt;p&gt;At this point, I thought it was just me. &lt;em&gt;&lt;b&gt;My feet are not designed for running.&lt;/b&gt;&lt;/em&gt;😒&lt;/p&gt;
+&lt;p&gt;Few months later, I fell in love with a Nike running shoe, the moment I tried it on. They were so weightless and the soles were thick and comfortable.&lt;/p&gt;
+&lt;p&gt;The same day I went for a run. &lt;br /&gt;&lt;em&gt;I felt like a child who just started running. &lt;/em&gt;&lt;br /&gt;My feet did not hurt!! &lt;br /&gt;It made a huge difference in the way I looked at running. &lt;br /&gt;It motivated me to keep running.&lt;/p&gt;
+&lt;p&gt;Choosing the right shoes make a huge difference. Those pair of shoes I am comfortable in, may not be the right fit&amp;nbsp;for you. &lt;strong&gt;Running shoes are an investment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It takes time to find your flavor. Don't settle for less comfortable, cheap shoes.&lt;/p&gt;
+&lt;p&gt;Keep searching for those perfect shoes.👟&lt;/p&gt;
+</description>
+        
+          <description>&lt;p&gt;I remember running my first 8 km and not being able to walk the whole day after. I thought I was just not fit. I tried multiple times, with short distance and long distance running. But my feet hurt so bad that I gave up on running.&lt;/p&gt;
+&lt;p&gt;A lot of articles suggested that I need better shoes. I bought a pair from Decathlon (40 AUD). It was so comfortable for my zumba classes. I decided to give running another chance. But, Zumba shoes are not running shoes.&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;I tried couple more shoes from big brands like Nike &amp;amp; Reebok. They were amazing for weight training. But&amp;nbsp;horrendous for running.&lt;/p&gt;
+&lt;p&gt;At this point, I thought it was just me. &lt;em&gt;&lt;b&gt;My feet are not designed for running.&lt;/b&gt;&lt;/em&gt;😒&lt;/p&gt;
+&lt;p&gt;Few months later, I fell in love with a Nike running shoe, the moment I tried it on. They were so weightless and the soles were thick and comfortable.&lt;/p&gt;
+&lt;p&gt;The same day I went for a run. &lt;br /&gt;&lt;em&gt;I felt like a child who just started running. &lt;/em&gt;&lt;br /&gt;My feet did not hurt!! &lt;br /&gt;It made a huge difference in the way I looked at running. &lt;br /&gt;It motivated me to keep running.&lt;/p&gt;
+&lt;p&gt;Choosing the right shoes make a huge difference. Those pair of shoes I am comfortable in, may not be the right fit&amp;nbsp;for you. &lt;strong&gt;Running shoes are an investment&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It takes time to find your flavor. Don't settle for less comfortable, cheap shoes.&lt;/p&gt;
+&lt;p&gt;Keep searching for those perfect shoes.👟&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 03 Jun 2017 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/why-i-hated-running/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/why-i-hated-running/</guid>
+        
+        
+        <category>Life</category>
+        
+        <category>Running</category>
+        
+        <category>Fitness</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Training that voice in my head</title>
+        <description>&lt;pre&gt;Ouch. Did I hear my ankle crack?&lt;br /&gt;OMG. It could be a sprain.&lt;br /&gt;I could have torn some ligaments.&lt;br /&gt;Let me stop here.&lt;br /&gt;Water. I need water!&lt;br /&gt;&lt;br /&gt;Argh. Not even half way there?&lt;br /&gt;Why not just turn around?&lt;br /&gt;Why do I breathe so fast?&lt;br /&gt;Is it normal to breathe through my mouth?&lt;br /&gt;&lt;br /&gt;Phew. Made it half way.&lt;br /&gt;Do I have to go back right now?&lt;br /&gt;I can't feel my legs!!&lt;br /&gt;I am going to fall on my face.&lt;br /&gt;Oooh. Gelato house.&lt;br /&gt;&lt;br /&gt;&lt;em&gt;We are almost done.&lt;/em&gt;&lt;br /&gt;&lt;em&gt;Actually, my legs don't hurt so bad.&lt;/em&gt;&lt;br /&gt;&lt;em&gt;I feel alive; very much alive.&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;em&gt;Why was I so negative about running anyway?&lt;/em&gt;&lt;/strong&gt;&lt;/pre&gt;
+</description>
+        
+          <description>&lt;pre&gt;Ouch. Did I hear my ankle crack?&lt;br /&gt;OMG. It could be a sprain.&lt;br /&gt;I could have torn some ligaments.&lt;br /&gt;Let me stop here.&lt;br /&gt;Water. I need water!&lt;br /&gt;&lt;br /&gt;Argh. Not even half way there?&lt;br /&gt;Why not just turn around?&lt;br /&gt;Why do I breathe so fast?&lt;br /&gt;Is it normal to breathe through my mouth?&lt;br /&gt;&lt;br /&gt;Phew. Made it half way.&lt;br /&gt;Do I have to go back right now?&lt;br /&gt;I can't feel my legs!!&lt;br /&gt;I am going to fall on my face.&lt;br /&gt;Oooh. Gelato house.&lt;br /&gt;&lt;br /&gt;&lt;em&gt;We are almost done.&lt;/em&gt;&lt;br /&gt;&lt;em&gt;Actually, my legs don't hurt so bad.&lt;/em&gt;&lt;br /&gt;&lt;em&gt;I feel alive; very much alive.&lt;/em&gt;&lt;br /&gt;&lt;br /&gt;&lt;strong&gt;&lt;em&gt;Why was I so negative about running anyway?&lt;/em&gt;&lt;/strong&gt;&lt;/pre&gt;
+</description>
+        
+        <pubDate>Fri, 02 Jun 2017 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/blog/training-that-voice/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/training-that-voice/</guid>
+        
+        
+        <category>Life</category>
+        
+        <category>Running</category>
+        
+        <category>Fitness</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Break Stereotypes</title>
+        <description>&lt;p&gt;&lt;i&gt;
+“Boys will be boys&lt;br /&gt;
+Play with the girls”
+&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;says mom to 5 year old Sarah when she complains about being teased by the boys, for missing a wicket at the cricket game.&lt;/p&gt;
+
+&lt;p&gt;This creates a fear in her heart.&lt;/p&gt;
+
+&lt;p&gt;A fear which makes her find boys intimidating.
+A fear which stops her from getting better at a game she really wants to play.&lt;/p&gt;
+
+&lt;p&gt;10 years later, this fear stops her from taking a class she wants to take,
+Because the same “boys” are in it.
+She is not matured enough to take the road less taken;
+She wants to be at a place which she considers her safe zone.&lt;/p&gt;
+
+&lt;p&gt;15 years later, this fear stops her from learning to code,
+Because she has not seen many women who are good at it.&lt;/p&gt;
+
+&lt;p&gt;Stereotypes are created by us. 
+They affect our decisions. 
+They affect our way of life.&lt;/p&gt;
+
+</description>
+        
+          <description>&lt;p&gt;&lt;i&gt;
+“Boys will be boys&lt;br /&gt;
+Play with the girls”
+&lt;/i&gt;&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 11 Mar 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000/blog/gender-stereotypes/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/gender-stereotypes/</guid>
+        
+        
+        <category>Life</category>
+        
+        <category>IWD</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Break Stereotypes</title>
+        <description>&lt;p&gt;Dear women,&lt;/p&gt;
+&lt;p&gt;
+Don't get carried away by the stereotypes set by media;&lt;br /&gt;
+Nobody but you can define what you are capable of.
+&lt;/p&gt;
+&lt;p&gt;Don’t be intimidated by the men in the floor;&lt;br /&gt;
+Your skills are equally important as theirs.&lt;/p&gt;
+
+&lt;p&gt;Don’t be afraid of being wrong;&lt;br /&gt;
+Everyone makes mistakes and so will you.&lt;/p&gt;
+
+&lt;p&gt;You are strong. You are beautiful;&lt;br /&gt; 
+Feel free to express yourself.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let not the stereotypes stop you from expressing yourself.&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;
+This International Women’s day, I pledge to be bold for change and challenge stereotypes.
+&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.internationalwomensday.com/BeBold&quot;&gt;#BeBoldForChange&lt;/a&gt;&lt;/p&gt;
+</description>
+        
+          <description>&lt;p&gt;Dear women,&lt;/p&gt;
+&lt;p&gt;
+Don't get carried away by the stereotypes set by media;&lt;br /&gt;
+Nobody but you can define what you are capable of.
+&lt;/p&gt;
+&lt;p&gt;Don’t be intimidated by the men in the floor;&lt;br /&gt;
+Your skills are equally important as theirs.&lt;/p&gt;
+</description>
+        
+        <pubDate>Tue, 07 Mar 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000/blog/break-stereotypes/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/break-stereotypes/</guid>
+        
+        
+        <category>Life</category>
+        
+        <category>IWD</category>
+        
+      </item>
+      
+    
+      
+      <item>
+        <title>Connect with MergeProps</title>
+        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MergeProps&lt;/code&gt; is the third argument to the &lt;a href=&quot;https://github.com/reactjs/react-redux/blob/master/docs/api.md&quot;&gt;connect&lt;/a&gt; function. It is a function which is used to select a slice of the props from state and dispatch.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SaveAllContainer&lt;/code&gt; maps the todo items from store to props and a &lt;code class=&quot;highlighter-rouge&quot;&gt;save&lt;/code&gt; prop which dispatches an action to save all items.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const mapStateToProps = (state) =&amp;gt; {
+    return {
+        items: state.items
+    };
+};
+
+const mapDispatchToProps = (dispatch) =&amp;gt; {
+    return {
+        save: (items) =&amp;gt; dispatch({type: &quot;SAVE_ALL&quot;, items})
+    };
+};
+
+const SaveAllContainer = connect(mapStateToProps, mapDispatchToProps)(SaveAll);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const SaveAll = ({save, items}) =&amp;gt; {
+    return &amp;lt;button onClick={() =&amp;gt; save(items)}&amp;gt;Save All &amp;lt;/button&amp;gt;;
+};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;items&lt;/code&gt; is being passed to the component and back to the container. But, the presentational component does not need to know about the &lt;code class=&quot;highlighter-rouge&quot;&gt;items&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I would like it, if the &lt;code class=&quot;highlighter-rouge&quot;&gt;save&lt;/code&gt; function in props knows about the &lt;code class=&quot;highlighter-rouge&quot;&gt;items&lt;/code&gt; to be saved, so that the items need not be passed in props.
+Ideally, the container should return something like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
+    save: () =&amp;gt; dispatch({type: &quot;SAVE_ALL&quot;, items: state.items})
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The best place to combine &lt;code class=&quot;highlighter-rouge&quot;&gt;state&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;dispatch&lt;/code&gt; is &lt;code class=&quot;highlighter-rouge&quot;&gt;mergeProps&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;const mapDispatchToProps = (dispatch) =&amp;gt; {
+    return {
+        dispatchSave: (items) =&amp;gt; dispatch({type: &quot;SAVE_ALL&quot;, items})
+    };
+}
+
+const mergeProps = (propsFromState, propsFromDispatch, ownProps) {
+    return {
+        save: propsFromDispatch.dispatchSave(propsFromState.items)
+    };
+};
+
+const SaveAllContainer = connect(mapStateToProps, mapDispatchToProps, mergeProps)(SaveAll);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;SaveAll&lt;/code&gt; component is not aware of the &lt;code class=&quot;highlighter-rouge&quot;&gt;items&lt;/code&gt; anymore. &lt;code class=&quot;highlighter-rouge&quot;&gt;mergeProps&lt;/code&gt; is now responsible for passing the items to be saved.&lt;/p&gt;
+
+&lt;p&gt;When the third argument is not passed to &lt;code class=&quot;highlighter-rouge&quot;&gt;connect&lt;/code&gt;, the default implementation of &lt;code class=&quot;highlighter-rouge&quot;&gt;mergeProps&lt;/code&gt; combines the &lt;code class=&quot;highlighter-rouge&quot;&gt;ownProps&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;mapStateToProps&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mapDispatchToProps&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mergeProps&lt;/code&gt; is where you can filter the props being passed to the component. Especially in situations like above, where you intend to use properties from store as parameters to dispatch actions, &lt;code class=&quot;highlighter-rouge&quot;&gt;mergeProps&lt;/code&gt; is the cleanest choice.&lt;/p&gt;
+</description>
+        
+          <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MergeProps&lt;/code&gt; is the third argument to the &lt;a href=&quot;https://github.com/reactjs/react-redux/blob/master/docs/api.md&quot;&gt;connect&lt;/a&gt; function. It is a function which is used to select a slice of the props from state and dispatch.&lt;/p&gt;
+</description>
+        
+        <pubDate>Thu, 02 Mar 2017 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000/blog/connect-with-mergeprops/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/connect-with-mergeprops/</guid>
+        
+        
+        <category>Tech</category>
+        
+        <category>React</category>
+        
+        <category>Redux</category>
+        
+        <category>Javascript</category>
+        
+      </item>
+      
+    
+  </channel>
+</rss>
